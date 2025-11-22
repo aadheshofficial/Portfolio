@@ -1,10 +1,10 @@
 import React from 'react'
 import SocialMediaLink from './SocialMediaLink'
-import instagram from "../Images/instagram.jpeg"
-import gmail from "../Images/gmail.png"
-import whatsapp from "../Images/whatsapp.jpg"
-import telegram from "../Images/telegram.png"
-import github from "../Images/github.png"
+import instagram from "../Images/SocialMedia/instagram.jpeg"
+import gmail from "../Images/SocialMedia/gmail.png"
+import whatsapp from "../Images/SocialMedia/whatsapp.jpg"
+import telegram from "../Images/SocialMedia/telegram.png"
+import github from "../Images/SocialMedia/github.png"
 
 
 const SideBarSocialMedia = () => {
