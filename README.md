@@ -1,3 +1,7 @@
+🌐 Personal Portfolio Website
+Welcome to my personal portfolio website!
+This project showcases my skills, projects, experience, and everything I’ve built as a developer.
+It’s designed to be clean, fast, responsive, and easy to expand as I grow.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
