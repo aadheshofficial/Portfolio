@@ -1,0 +1,16 @@
+.what-i-do-card {
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.what-i-do-card>p{
+  color: rgb(91, 91, 91);
+  font-size: 14px;
+}
+
+.wid-title{
+  border-left: #57AB65 10px solid;
+  padding: 3px;
+  padding-left: 20px;
+}

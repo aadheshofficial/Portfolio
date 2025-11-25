@@ -1,0 +1,40 @@
+.language-main{
+  display: flex;
+  flex-direction: column;
+}
+
+.language-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.language-container-title{
+  margin: 10px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  justify-content: start;
+  text-align: start;
+  border-left: #57AB65 8px solid;
+}
+
+.language-card {
+  width: calc(33.333% - 16px); /* 3 cards per row */
+  background: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-sizing: border-box;
+}
+.language-logo{
+  text-align: left;
+}
+
+.language-card-content{
+  padding: 5px;
+  display: flex;
+  font-size: 14px;
+  color: #535050;
+  text-align: left;
+}

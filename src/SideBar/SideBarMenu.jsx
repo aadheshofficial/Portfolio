@@ -4,7 +4,7 @@ const SideBarMenu = () => {
   return (
     <nav>
       <ul className='side-bar-menu'>
-        <SideBarMenuElements MenuElements={"Home"} MenuPath={"/home"}/>
+        <SideBarMenuElements MenuElements={"Home"} MenuPath={"/"}/>
         <SideBarMenuElements MenuElements={"About"} MenuPath={"/about"}/>
         <SideBarMenuElements MenuElements={"Contact"} MenuPath={"/contact"}/>
         <SideBarMenuElements MenuElements={"Projects"} MenuPath={"/projects"}/>

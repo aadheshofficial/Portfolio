@@ -1,0 +1,81 @@
+.side-bar-color {
+  background-color: #57AB65;
+}
+
+.side-bar{
+  width: 30vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  color: whitesmoke;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.side-bar-content{
+  margin: 50px;
+}
+
+.side-bar-name {
+  font-size: 36px;
+}
+
+.side-bar-profile {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.side-bar-link-column {
+  margin-top: 20px;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.link-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+.side-bar-menu{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  /* width: 100%; */
+  padding: 0;
+}
+
+.side-bar-menu-elements{
+  width: calc(100% - 20px);
+  margin-top: 10px;
+  font-size: larger;
+  padding: 8px;
+  border-radius: 10px;
+  border-bottom: whitesmoke 2px solid;
+  border-right: whitesmoke 2px solid;
+  transition: transform 0.2s ease,color 0.2s ease,background-color 0.2s ease;
+}
+.side-bar-menu-element-text{
+  transition: transform 0.2s ease,color 0.2s ease,background-color 0.2s ease;
+  text-decoration: none;
+  color:whitesmoke
+}
+.side-bar-menu-element-text:hover{
+  color:darkgreen
+}
+
+.side-bar-menu-elements:hover{
+  transform: scale(1.1);
+  color: darkgreen;
+  background-color: lightgreen;
+}
+.side-bar-menu-elements.active{
+  background-color: rgb(63, 148, 63);
+  color: white;
+}

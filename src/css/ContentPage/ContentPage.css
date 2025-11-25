@@ -1,0 +1,10 @@
+.content-page {
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 80vw;
+  overflow-y: scroll;
+}
+
+.main-background-color {
+  background-color: whitesmoke;
+}

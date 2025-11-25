@@ -1,12 +1,16 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 const SideBarMenuElements = ({MenuElements,MenuPath}) => {
   return (
 
-          <Link to={MenuPath} className='side-bar-menu-elements side-bar-menu-element-text'>
+          <NavLink to={MenuPath} 
+          className={({ isActive }) =>
+          isActive ? "side-bar-menu-elements side-bar-menu-element-text active" : "side-bar-menu-elements side-bar-menu-element-text"
+        }
+        end>
             {MenuElements}
-          </Link>
+          </NavLink>
 
   )
 }
