@@ -1,6 +1,6 @@
 import React from 'react'
 import HomePage from './HomePage/HomePage'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import AboutPage from './AboutPage/AboutPage'
 import ContactPage from './ContactPage/ContactPage'
 import ResumePage from './ResumePage/ResumePage'
@@ -17,7 +17,6 @@ const ContentPage = () => {
             <Route path='/contact' element={<ContactPage/>}/>
             <Route path='/projects' element={<ProjectPage/>}/>
             <Route path='/resume' element={<ResumePage/>}/>
-
             <Route path='*' element={<NotFoundPage/>}/>
           </Routes>
         
