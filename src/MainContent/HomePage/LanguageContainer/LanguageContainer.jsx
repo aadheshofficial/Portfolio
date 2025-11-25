@@ -6,6 +6,8 @@ import java from "../../../Images/LanguageImage/java.png"
 import sql from "../../../Images/LanguageImage/sql.jpg"
 import nosql from "../../../Images/LanguageImage/nosql.png"
 import c_language from "../../../Images/LanguageImage/c_language.png"
+import html from "../../../Images/LanguageImage/html.png"
+import css from "../../../Images/LanguageImage/css.png"
 
 
 const LanguageContainer = () => {
@@ -15,6 +17,11 @@ const LanguageContainer = () => {
             title : "Venilla javascript",
             link:"https://en.wikipedia.org/wiki/JavaScript",
             content:"Created multiple javascript programs to understand real world application of the language to grasp the concepts "
+        },
+        {
+            title:"Java",
+            content:"java",
+            image:java
         },
         {
             image:python,
@@ -40,6 +47,16 @@ const LanguageContainer = () => {
             link: "nosql Link",
             content : "nosql language"
         },
+        {
+            title:"HTML 5",
+            content:"HTML version 5",
+            image: html
+        },
+        {
+            title:"CSS",
+            content:"Css version 3",
+            image:css
+        }
     ]
   return (
     <div className='language-main'>

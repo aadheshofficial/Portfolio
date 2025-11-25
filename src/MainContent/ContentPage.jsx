@@ -5,6 +5,7 @@ import AboutPage from './AboutPage/AboutPage'
 import ContactPage from './ContactPage/ContactPage'
 import ResumePage from './ResumePage/ResumePage'
 import ProjectPage from './ProjectsPage/ProjectPage'
+import NotFoundPage from './NotFoundPage/NotFoundPage'
 
 const ContentPage = () => {
   return (
@@ -16,6 +17,8 @@ const ContentPage = () => {
             <Route path='/contact' element={<ContactPage/>}/>
             <Route path='/projects' element={<ProjectPage/>}/>
             <Route path='/resume' element={<ResumePage/>}/>
+
+            <Route path='*' element={<NotFoundPage/>}/>
           </Routes>
         
       </div>
