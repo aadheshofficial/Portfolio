@@ -1,10 +1,13 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
-const SideBarMenuElements = ({MenuElements}) => {
+const SideBarMenuElements = ({MenuElements,MenuPath}) => {
   return (
-        <li className="side-bar-menu-elements">
+
+          <Link to={MenuPath} className='side-bar-menu-elements side-bar-menu-element-text'>
             {MenuElements}
-        </li>
+          </Link>
+
   )
 }
 
