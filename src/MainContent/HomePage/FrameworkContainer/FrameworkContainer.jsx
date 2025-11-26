@@ -9,6 +9,7 @@ import restapi from "../../../Images/FrameworkImage/restapi.png"
 import nodejs from "../../../Images/FrameworkImage/nodejs.png"
 import expressjs from "../../../Images/FrameworkImage/expressjs.png"
 import mongodb from "../../../Images/FrameworkImage/mongodb.svg"
+import RevealOnScroll from '../../../Animation/RevealOnScroll'
 const FrameworkContainer = () => {
     const frameworks = [
         {
@@ -60,14 +61,16 @@ const FrameworkContainer = () => {
     ]
   return (
     <div className='framework-main'>
-        <div className="framework-container-title">
-            <h2>Frameworks</h2>
-        </div>
-        <div className="framework-container">
-            {frameworks.map(f=>(
-                <FrameworkCard MediaImage={f.image} MediaLink={f.link} MediaName={f.title} content={f.content}/>
-            ))}
-        </div>
+        <RevealOnScroll animation='fade-right'>
+            <div className="framework-container-title">
+                <h2>Frameworks</h2>
+            </div>
+            <div className="framework-container">
+                {frameworks.map(f=>(
+                    <FrameworkCard MediaImage={f.image} MediaLink={f.link} MediaName={f.title} content={f.content}/>
+                ))}
+            </div>
+        </RevealOnScroll>
       
     </div>
   )

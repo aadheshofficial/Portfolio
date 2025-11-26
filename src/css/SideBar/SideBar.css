@@ -9,7 +9,7 @@
   flex-direction: row;
   color: whitesmoke;
   justify-content: center;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .side-bar-content{

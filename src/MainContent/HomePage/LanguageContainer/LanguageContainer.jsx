@@ -8,6 +8,7 @@ import nosql from "../../../Images/LanguageImage/nosql.png"
 import c_language from "../../../Images/LanguageImage/c_language.png"
 import html from "../../../Images/LanguageImage/html.png"
 import css from "../../../Images/LanguageImage/css.png"
+import RevealOnScroll from '../../../Animation/RevealOnScroll'
 
 
 const LanguageContainer = () => {
@@ -60,14 +61,16 @@ const LanguageContainer = () => {
     ]
   return (
     <div className='language-main'>
-        <div className="language-container-title">
-            <h2>Languages</h2>
-        </div>
-        <div className="language-container">
-            {languages.map(language=>(
-                <LanguageCard MediaImage={language.image} MediaLink={language.link} MediaName={language.title} content={language.content}/>
-            ))}
-        </div>
+        <RevealOnScroll animation='fade-right'>
+            <div className="language-container-title">
+                <h2>Languages</h2>
+            </div>
+            <div className="language-container">
+                {languages.map(language=>(
+                    <LanguageCard MediaImage={language.image} MediaLink={language.link} MediaName={language.title} content={language.content}/>
+                ))}
+            </div>
+        </RevealOnScroll>
       
     </div>
   )

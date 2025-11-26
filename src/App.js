@@ -7,6 +7,8 @@ import './css/ContentPage/MainPage/WhatIDoCard/WhatIDoCard.css'
 import './css/ContentPage/MainPage/LanguageCard/LanguageCard.css'
 import './css/ContentPage/MainPage/FrameWorkCard/FrameWorkCard.css'
 import './css/ContentPage/ResumePage/ResumePage.css'
+import './css/ContentPage/NotFoundPage/NotFoundPage.css'
+import './css/Animation/Animation.css'
 
 import SidePane from './SideBar/SidePane';
 import ContentPage from './MainContent/ContentPage';

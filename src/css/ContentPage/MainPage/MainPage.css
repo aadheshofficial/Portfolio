@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+  margin-left: 10px;
+  overflow: hidden;
+
 }
 .home-page>hr{
   background-color: darkgreen;
