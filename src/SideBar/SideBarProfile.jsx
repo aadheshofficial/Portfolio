@@ -5,9 +5,9 @@ import RevealOnScrollNoRepeat from '../Animation/RevealOnScrollNoRepeat'
 const SideBarProfile = () => {
   return (
     <div >
-      <RevealOnScrollNoRepeat animation='zoom-in'>
+      {/* <RevealOnScrollNoRepeat animation='zoom-in'> */}
         <img src={profile} alt="profile image" className='side-bar-profile' />
-      </RevealOnScrollNoRepeat>
+      {/* </RevealOnScrollNoRepeat> */}
       
     </div>
   )

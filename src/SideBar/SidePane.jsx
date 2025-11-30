@@ -1,12 +1,12 @@
 import React from 'react'
 import SideBarContent from './SideBarContent'
 import RevealOnScroll from '../Animation/RevealOnScroll'
-const SidePane = () => {
+const SidePane = ({isOpen}) => {
   return (
-    <div className='side-bar-color side-bar'>
-      <RevealOnScroll animation='fade-left'>
+    <div className={isOpen ? "side-bar side-bar-open" : "side-bar side-bar-close"}>
+      {/* <RevealOnScroll animation='fade-left'> */}
         <SideBarContent/>
-      </RevealOnScroll>
+      {/* </RevealOnScroll> */}
     </div>
   )
 }

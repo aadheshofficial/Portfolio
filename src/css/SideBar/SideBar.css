@@ -1,15 +1,25 @@
-.side-bar-color {
-  background-color: #57AB65;
-}
 
 .side-bar{
-  width: 30vw;
+  background-color: #57AB65;
+  width: 25vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
   color: whitesmoke;
   justify-content: center;
+  margin: 0;
+  transition: all 0.4s ease;
   /* overflow-y: scroll; */
+}
+.side-bar-open{
+  width: 25vw;
+  opacity: 1;
+}
+.side-bar-close{
+  width: 0;
+  padding: 0;
+  opacity: 0;
+  transform: translateX(-40vw);
 }
 
 .side-bar-content{

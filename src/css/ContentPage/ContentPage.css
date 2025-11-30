@@ -3,8 +3,20 @@
   height: 100vh;
   width: 80vw;
   overflow-y: scroll;
+  transition: all 0.4s ease;
 }
 
+.content-page-full {
+  width: 100vw;
+  margin-top: 1vh;
+  margin-left: 6vw;
+
+  height: 100vh;
+}
+.content-page-half {
+  margin-top: 1vh;
+  margin-left: 1.5vw;
+}
 .main-background-color {
   background-color: whitesmoke;
 }

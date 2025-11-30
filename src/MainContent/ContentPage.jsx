@@ -7,9 +7,9 @@ import ResumePage from './ResumePage/ResumePage'
 import ProjectPage from './ProjectsPage/ProjectPage'
 import NotFoundPage from './NotFoundPage/NotFoundPage'
 
-const ContentPage = () => {
+const ContentPage = ({isOpen}) => {
   return (
-      <div className='content-page'>
+      <div className={isOpen ? "content-page content-page-half" : "content-page content-page-full"}>
           <Routes>
             <Route path='/' element={<HomePage/>}/>
             <Route path="/home" element={<Navigate to="/" />} />

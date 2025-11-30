@@ -23,3 +23,71 @@ span>a:hover{
 h1{
   color: darkgreen;
 }
+
+.short-nav {
+  background-color: #3f974d;
+  position: fixed;
+  width: 5.5vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease;
+}
+.short-nav-hide {
+  /* transform: translateX(-200vw); */
+  margin: 0;
+  padding: 0;
+
+}
+.nav-bar-box {
+  margin-top : 10vh;
+}
+.nav-icon>img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.hamburger {
+  position: fixed;
+  top : 20px;
+  left: 23px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1000;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  height: 6px;
+  width: 100%;
+  /* background-color: darkgreen; */
+  background: #fff;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+
+.hamburger-active span:nth-child(1) {
+  transform: translateY(13px) rotate(48deg);
+  background-color: #fff;
+  width: 80%;
+}
+.hamburger-active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-active span:nth-child(3) {
+  transform: translateY(-12.75px) rotate(-48deg);
+  background-color: #fff;
+  width: 80%;
+}
