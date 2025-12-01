@@ -1,0 +1,110 @@
+
+.short-nav {
+  background-color: #3f974d;
+  position: fixed;
+  width: 6.5vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+.short-nav-hide {
+  margin: 0;
+  padding: 0;
+
+}
+.nav-bar-box {
+  margin-top : 13vh;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+.nav-icon>img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20%;
+}
+
+
+.nav-icon.active .nav-img{
+    background-color:darkgreen;
+    transform: scale(1.2);
+}
+
+.hamburger {
+  position: fixed;
+  top : 25px;
+  left: 30px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1000;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  height: 6px;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+
+.hamburger-active span:nth-child(1) {
+  transform: translateY(13px) rotate(48deg);
+  background-color: #fff;
+  width: 80%;
+}
+.hamburger-active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-active span:nth-child(3) {
+  transform: translateY(-12.75px) rotate(-48deg);
+  background-color: #fff;
+  width: 80%;
+}
+
+.nav-tooltip{
+    position: absolute;
+    background-color: #3f974d;
+    color: #fff;
+    left: 90px;
+    padding:5px 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    pointer-events: none;
+    white-space: nowrap;
+    transform: translateX(50%) translateY(10px);
+    border: darkgreen solid 2px;
+    z-index: 999;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+.nav-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -35px;
+    /* padding: 5px 10px; */
+    transform: translateY(-50%);
+    border-width: 18px;
+    border-style: solid ;
+    border-color: transparent darkgreen transparent transparent;
+}
+.nav-icon:hover .nav-tooltip {
+    opacity: 1;
+    transform:  translateX(12px) translateY(10px);
+}

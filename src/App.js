@@ -9,11 +9,13 @@ import './css/ContentPage/MainPage/FrameWorkCard/FrameWorkCard.css'
 import './css/ContentPage/ResumePage/ResumePage.css'
 import './css/ContentPage/NotFoundPage/NotFoundPage.css'
 import './css/Animation/Animation.css'
-import profile from "./Images/profile.jpg"
+import './css/NavBar/NavBar.css'
 import SidePane from './SideBar/SidePane';
 import ContentPage from './MainContent/ContentPage';
+
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import NavBar from './NavBar/NavBar';
+import RevealOnScrollNoRepeat from './Animation/RevealOnScrollNoRepeat';
 function App() {
   const [isOpen,setIsOpen] = useState(false);
   return (
@@ -25,32 +27,9 @@ function App() {
         <span></span>
       </button>
       { !isOpen ? 
-        <div className={!isOpen ? "short-nav" : "short-nav-hide"}>
-        <div className="short-nav-bar">
-          <div className="nav-bar-box">
-            <NavLink to={"/"} className={"nav-icon"}>
-              <img src={profile} alt="home" />
-            </NavLink>
-            <NavLink to={"/about"} className={"nav-icon"}>
-              <img src={profile} alt="home" />
-            </NavLink>
-            <NavLink to={"/contact"} className={"nav-icon"}>
-              <img src={profile} alt="home" />
-            </NavLink>
-            <NavLink to={"/contact"} className={"nav-icon"}>
-              <img src={profile} alt="home" />
-            </NavLink>
-            <NavLink to={"/contact"} className={"nav-icon"}>
-              <img src={profile} alt="home" />
-            </NavLink>
-          </div>
-        </div>
-      </div> 
-      
+        <NavBar isOpen={isOpen}/>
       :
-
-      <SidePane isOpen={isOpen}/>
-
+        <SidePane isOpen={isOpen}/>
       }
       
       <ContentPage isOpen={isOpen}/>
