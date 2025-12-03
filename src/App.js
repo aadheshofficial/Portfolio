@@ -10,12 +10,13 @@ import './css/ContentPage/ResumePage/ResumePage.css'
 import './css/ContentPage/NotFoundPage/NotFoundPage.css'
 import './css/Animation/Animation.css'
 import './css/NavBar/NavBar.css'
+import './css/ContentPage/ContactPage/ContactPage.css'
+import './css/ContentPage/ProjectPage/ProjectPage.css'
 import SidePane from './SideBar/SidePane';
 import ContentPage from './MainContent/ContentPage';
 
 import { useState } from 'react';
 import NavBar from './NavBar/NavBar';
-import RevealOnScrollNoRepeat from './Animation/RevealOnScrollNoRepeat';
 function App() {
   const [isOpen,setIsOpen] = useState(false);
   return (

@@ -1,0 +1,10 @@
+.project-page-main{
+  margin-bottom: 80px;
+  margin-left: 40px;
+}
+
+.project-page-main>h1 {
+  text-align: left;
+  border-left: 8px solid green;
+  padding: 10px;
+}
