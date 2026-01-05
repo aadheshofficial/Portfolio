@@ -2,25 +2,27 @@
 .side-bar{
   background-color: #57AB65;
   width: 25vw;
+  min-width: 25vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
   color: whitesmoke;
   justify-content: center;
   margin: 0;
-  transition: all 0.4s ease;
+  transition: all 4s ease;
+  box-sizing: border-box;
   /* overflow-y: scroll; */
 }
-.side-bar-open{
+/* .side-bar-open{
   width: 25vw;
   opacity: 1;
-}
-.side-bar-close{
+} */
+/* .side-bar-close{
   width: 0;
   padding: 0;
   opacity: 0;
-  transform: translateX(-40vw);
-}
+  transform: translateX(-200%);
+} */
 
 .side-bar-content{
   margin: 50px;
@@ -88,4 +90,8 @@
 .side-bar-menu-elements.active{
   background-color: rgb(63, 148, 63);
   color: white;
+}
+
+.side-bar-content-desc{
+  width: 100%;
 }

@@ -28,10 +28,12 @@ function App() {
         <span></span>
       </button>
       { !isOpen ? 
-        <NavBar isOpen={isOpen}/>
-      :
-        <SidePane isOpen={isOpen}/>
-      }
+        <NavBar/>
+        :
+        <SidePane />
+        }
+        {/* <NavBar isOpen={isOpen}/>
+        <SidePane isOpen={isOpen}/> */}
       
       <ContentPage isOpen={isOpen}/>
     </div>

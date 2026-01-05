@@ -6,9 +6,10 @@ import project from '../Images/NavBar/project.png'
 import resume from '../Images/NavBar/resume.png'
 import { NavLink } from 'react-router-dom';
 
-const NavBar = ({isOpen}) => {
+const NavBar = () => {
   return (
-    <div className={!isOpen ? "short-nav" : "short-nav-hide"}>
+    // <div className={!isOpen ? "short-nav" : "short-nav-hide"}>
+    <div className={"short-nav"}>
           <div className="short-nav-bar">
             <div className="nav-bar-box">
               <NavLink to={"/"} className={"nav-icon"} end>
